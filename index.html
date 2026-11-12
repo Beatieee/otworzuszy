@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Otwórz Uszy</title>
+<meta name="description" content="Otwórz Uszy – projekt edukacyjny dla najmłodszych.">
+<style>
+:root {
+  --green: #789477;
+  --dark: #455c48;
+  --pink: #e9c6c6;
+  --cream: #fffaf2;
+  --brown: #806b5b;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--brown);
+  font-family: Georgia, serif;
+  line-height: 1.7;
+}
+header {
+  text-align: center;
+  padding: 90px 20px 75px;
+  background: #e9eee3;
+}
+header h1 {
+  color: var(--dark);
+  font-size: clamp(42px, 8vw, 76px);
+  margin: 0;
+  letter-spacing: 2px;
+}
+header p {
+  color: var(--green);
+  font-size: 18px;
+  margin-top: 10px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 18px;
+  background: var(--cream);
+}
+nav a {
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 15px;
+}
+nav a:hover {
+  color: #b78383;
+}
+section {
+  max-width: 950px;
+  margin: auto;
+  padding: 65px 25px;
+  text-align: center;
+}
+h2 {
+  color: var(--green);
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+p {
+  font-size: 17px;
+}
+.intro {
+  max-width: 720px;
+  margin: auto;
+}
+.characters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 35px;
+  margin-top: 35px;
+}
+.character {
+  background: white;
+  border-radius: 22px;
+  padding: 28px;
+}
+.character h3 {
+  color: var(--dark);
+  font-size: 25px;
+}
+.image-placeholder {
+  background: #f1e9df;
+  border-radius: 16px;
+  min-height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9b8877;
+  padding: 20px;
+}
+footer {
+  text-align: center;
+  padding: 45px 20px;
+  background: #e9eee3;
+  color: var(--dark);
+}
+footer a {
+  color: var(--dark);
+  margin: 0 10px;
+}
+@media (max-width: 600px) {
+  .characters {
+    grid-template-columns: 1fr;
+  }
+  section {
+    padding: 45px 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Otwórz Uszy</h1>
+  <p>Małe historie, wielkie znaczenie ♡</p>
+</header>
+
+<nav>
+  <a href="#zespol">Nasz zespół</a>
+  <a href="#projekt">O projekcie</a>
+  <a href="#bohaterowie">Nasi bohaterowie</a>
+</nav>
+
+<section id="zespol">
+  <h2>Kto za tym wszystkim stoi?</h2>
+  <div class="intro">
+    <p>
+      Jesteśmy zespołem młodych osób, które postanowiły
+      stworzyć projekt wspierający najmłodszych w poznawaniu
+      emocji, wyrażaniu potrzeb i budowaniu relacji z innymi.
+    </p>
+  </div>
+</section>
+
+<section id="projekt">
+  <h2>Poznaj nasz projekt!</h2>
+  <div class="intro">
+    <p>
+      Otwórz Uszy to projekt skierowany do dzieci w wieku
+      przedszkolnym. Poprzez opowieści, zabawy i wspólne
+      aktywności pomagamy dzieciom lepiej rozumieć siebie
+      i innych.
+    </p>
+    <p>
+      Uczymy, że każdy ma prawo do własnych emocji,
+      potrzeb i granic, a wzajemne słuchanie pomaga
+      nam lepiej się porozumiewać.
+    </p>
+  </div>
+</section>
+
+<section id="bohaterowie">
+  <h2>Poznaj Bellę i Bruna!</h2>
+  <p>To właśnie oni będą towarzyszyć nam w naszych historiach.</p>
+
+  <div class="characters">
+    <article class="character">
+      <div class="image-placeholder">
+        Tutaj dodamy ilustrację Belli
+      </div>
+      <h3>Bella</h3>
+      <p>
+        Jest łagodna, cierpliwa i trochę nieśmiała.
+        Lubi pomagać innym, ale sama również uczy się
+        mówić o swoich potrzebach.
+      </p>
+    </article>
+
+    <article class="character">
+      <div class="image-placeholder">
+        Tutaj dodamy ilustrację Bruna
+      </div>
+      <h3>Bruno</h3>
+      <p>
+        Jest ciekawski, pomysłowy i pełen energii.
+        Czasami działa zbyt szybko, dlatego uczy się
+        zatrzymywać i słuchać innych.
+      </p>
+    </article>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Otwórz Uszy</strong></p>
+  <p>Małe historie, wielkie znaczenie ♡</p>
+  <p>
+    <a href="https://www.instagram.com/">Instagram</a>
+  </p>
+  <p>© 2026 Otwórz Uszy</p>
+</footer>
+
+</body>
+</html>
